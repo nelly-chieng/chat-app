@@ -1,6 +1,8 @@
 import React from 'react';
 import PropsTypes from 'prop-types';
+import ContactList from './ContactList';
 import './Contact.css';
+
 
 const Contact = ({name, avatar, online}) => ( 
         <div className='Contact'>

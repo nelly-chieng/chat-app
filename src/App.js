@@ -1,9 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import Contact from './components/Contact';
+import ContactList from './components/ContactList';
 import './App.css';
 
-function App() {
+
+function App(){
+  return(
+    <div>
+      <ContactList />
+    </div>
+  );
+}
+
+
+
+
+
+/*function App() {
   return (
     <div >
       <Contact {...elmer} online/>
@@ -28,5 +40,5 @@ const  lillian = {
 const chris = {
   avatar :"https://randomuser.me/api/portraits/men/45.jpg",
   name :"Chris sims",
-}
+}*/
 export default App;
