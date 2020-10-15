@@ -1,6 +1,8 @@
 import React from 'react';
 import Contact from './Contact';
 
+
+function ContactList () {
     const users = [
         {
         name: 'Robert Reyes',
@@ -28,12 +30,15 @@ import Contact from './Contact';
         online: true
         }
     ];
-  const ContactList = () => (
-      <div>
-          {users.map(user => (
-              <Contact name={user.name} avatar={user.avatar} online={user.online} />
-          ))}
-      </div>
-  )
+    return (
+        <div>
+            <ul>
+                {users.map((user) => {
+                    return <li><Contact name={user.name} avatar={user.avatar} online={user.online} /></li>
+                })}
+            </ul>
+        </div>
+    )
+}
 
 export default ContactList;
